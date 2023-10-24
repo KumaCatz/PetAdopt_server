@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "email": "das@das.dfsg"
+  },
+  {
+    "id": 3,
+    "email": "ku@ku.ku",
+    "password": "ku"
+  },
+  {
+    "id": 3,
+    "email": "ro@ro.to",
+    "password": "ro",
+    "firstName": "ro",
+    "lastName": "ro",
+    "phone": "10"
+  },
+  {
+    "id": 4,
+    "email": "ro@ro.ro",
+    "password": "ro",
+    "firstName": "ro",
+    "lastName": "ro",
+    "phone": "10"
+  }
+]
