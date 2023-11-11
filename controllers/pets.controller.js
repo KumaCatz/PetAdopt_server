@@ -1,6 +1,9 @@
+const { uploadFile } = require("../utils/multer")
+
+
 module.exports = {
-    registerPet: (req, res, next) => {
-        console.log('hey')
-        res.send('hey loser you can do this shiiiiiiiiiiiiiiit cause you deserve to be succesfull')
+    registerPet: async (req, res, next) => {
+        console.log('req.file', req.file)
+        res.send('sent succesfully')
     }
 }
