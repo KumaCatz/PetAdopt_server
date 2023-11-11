@@ -1,26 +1,12 @@
 const express = require('express')
-const multer  = require('multer')
-const upload = multer({ dest: 'uploads/' })
 const cors = require('cors')
 const app = express()
 
 app.use(cors())
 app.use(express.json());
-const middleWare = (req, res, next) => {
-
-  next()
-}
-app.use(middleWare)
-
-app.post('/upload', upload.single('file'), function (req, res, next) {
-  console.log(req.file)
-  res.send('uploaded')
-})
 
 app.use('/auth', require('./routes/auth.routes'))
-
 app.use('/pets', require('./routes/pets.routes'))
-
 app.use('/users', require('./routes/users.routes'))
 
 app.use((err, req, res, next) => {
