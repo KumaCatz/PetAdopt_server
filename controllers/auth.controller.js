@@ -6,8 +6,9 @@ const jwt = require('jsonwebtoken')
 module.exports = {
   loginUser: async (req, res, next) => {
     try {
-      const user = userServices.getUserByKeyValue(req.body, "email")
-      const isPassword = userServices.compareUserDataByKeyValue(req.body, 'password')
+      const { body } = req
+      const user = userServices.getUserByKeyValue(body, "email")
+      const isPassword = await bcrypt.checkPassword(body.password, user.password)
       if (!user || !isPassword) {
         return next(ERR_EMAIL_OR_PASSWORD)
       }

@@ -9,5 +9,13 @@ module.exports = {
         res(hash)
       });
     })
+  },
+  checkPassword: (password, hash) => {
+    return new Promise((res, rej) => {
+      bcrypt.compare(password, hash, function(err, result) {
+        if(err) return rej();
+        res(result)
+      });
+    })
   }
 }
