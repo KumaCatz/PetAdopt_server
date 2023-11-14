@@ -1,9 +1,10 @@
 const fs = require('fs')
+const crypto = require('crypto')
 
 class DB {
   constructor(name) {
     this.name = name
-    this.path = `src/server/db/${name}.json`
+    this.path = `db/${name}.json`
   }
 
   getData = () => {
@@ -18,7 +19,8 @@ class DB {
 
   addData = (body) => {
     const arr = this.getData()
-    const newId = self.crypto.randomUUID()
+    const newId = crypto.randomUUID()
+    console.log(newId)
     arr.push({
       id: newId,
       ...body

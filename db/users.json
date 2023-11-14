@@ -23,5 +23,21 @@
     "firstName": "ro",
     "lastName": "ro",
     "phone": "10"
+  },
+  {
+    "id": "a820b85e-1988-40b4-93cc-5ed25cf7a3a5",
+    "email": "to.to@to.to",
+    "password": "$2b$10$GCLXCXRqk/KeOvYfGSgatOuQ6ctQKcYckVG9AKU6YwYIQKKwEkm6S",
+    "firstName": "to",
+    "lastName": "to",
+    "phone": "to"
+  },
+  {
+    "id": "45aec299-6676-4af5-a88a-0f5a146c8ace",
+    "email": "to@to.to",
+    "password": "$2b$10$YnttK.1i5LwbW9UPhDKb3.Iygy.EoC6AT2ISER6npK8YjmF9nS7NW",
+    "firstName": "to",
+    "lastName": "to",
+    "phone": "to"
   }
 ]

@@ -6,7 +6,6 @@ const jwt = require('jsonwebtoken')
 module.exports = {
   loginUser: async (req, res, next) => {
     try {
-      res.send('hi')
       const user = userServices.getUserByKeyValue(req.body, "email")
       const isPassword = userServices.compareUserDataByKeyValue(req.body, 'password')
       if (!user || !isPassword) {
